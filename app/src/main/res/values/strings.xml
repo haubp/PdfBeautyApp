@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PdfBeauty</string>
+    <string name="send">Send Message</string>
+    <string name="hello_world">hello world</string>
+    <string name="chooser">Send message ...</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+</resources>

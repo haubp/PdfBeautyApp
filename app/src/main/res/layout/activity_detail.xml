@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    class="com.example.pdfbeauty.WorkoutDetailFragment"
-    android:id="@+id/detail_frag"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jkb.slidemenu.SlideMenuLayout
+        android:id="@+id/detail_slide_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:allowDragging="true"
+        app:contentAlpha="0.5"
+        app:contentToggle="true"
+        app:parallax="true"
+        app:slideMode="right">
+
+        <include layout="@layout/content_menu_right" />
+
+        <LinearLayout
+            android:id="@+id/detail_slide_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                style="@style/TitleStyle.StatusBar"
+                android:background="@color/colorPrimary"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/detail_btn_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_back" />
+
+                    <ImageView
+                        android:id="@+id/detail_right_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_action_menu" />
+
+                    <TextView
+                        android:id="@+id/detail_tv_title_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <include
+                layout="@layout/fragment_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            
+        </LinearLayout>
+
+    </com.jkb.slidemenu.SlideMenuLayout>
+
+</RelativeLayout>

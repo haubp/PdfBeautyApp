@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fm_slide_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="opswat.com.flow.about.AboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/TitleStyle.StatusBar"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/about_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/about"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_detail_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/version"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+            <TextView
+                android:id="@+id/about_tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_id"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+            <TextView
+                android:id="@+id/about_tv_device_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+            <LinearLayout
+                android:id="@+id/about_view_managed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/last_connected"
+                    android:textAppearance="@style/Regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <TextView
+                    android:id="@+id/about_tv_last_connected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/server"
+                    android:textAppearance="@style/Regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <TextView
+                    android:id="@+id/about_tv_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/managed_by"
+                    android:textAppearance="@style/Regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+                <TextView
+                    android:id="@+id/about_tv_managed_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/about_btn_enroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/background_dark"
+                android:text="@string/enroll_your_device"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/header_text_size" />
+
+            <Button
+                android:id="@+id/about_btn_unregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/background_dark"
+                android:text="@string/unregister"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/header_text_size" />
+
+            <TextView
+                android:id="@+id/about_tv_term"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/end_user_license_agreement"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/detail_text_size" />
+
+            <TextView
+                android:id="@+id/about_copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copyright"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/detail_text_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_jailbreak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#F4F5F8"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_border_line" />
+
+        <LinearLayout
+            android:id="@+id/home_jailbreak_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/home_img_jailbreak"
+                android:layout_width="31dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_jailbreak_bad" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/jailbreak"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/header_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/home_btn_jailbreak_detail"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:tag="jailbreak">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/home_password_header"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/home_img_password"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/ic_password_lock_good" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/required"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/password"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/color_text_dark"
+                        android:textSize="@dimen/header_text_size" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/home_btn_password_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="password">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_good" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_password_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_password_enable_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="@string/password_protection"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_password_enable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|end"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:id="@+id/home_view_password_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_password_type_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="@string/lock_type"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_password_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|end"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#F8F8F8"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/security_recomandations"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_os"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/home_os_header"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/home_img_os"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/ic_os_update_good" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/required"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/os_up_to_date"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/color_text_dark"
+                        android:textSize="@dimen/header_text_size" />
+                </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/home_btn_os_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tag="os">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="34dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginBottom="32dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_good" />
+
+                    </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_os_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_android_version"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="@string/android_version"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_os"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|end"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#F8F8F8"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/security_recomandations"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/home_ad_tracking_header"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/home_img_ad_tracking"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/ic_ad_tracking_bad" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/required"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/ad_tracking"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/color_text_dark"
+                        android:textSize="@dimen/header_text_size" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/home_btn_ad_tracking_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="ad_tracking">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_good" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_ad_tracking_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="@string/ad_tracking"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_ad_tracking"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|end"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#F8F8F8"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/security_recomandations"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/home_encrypt_header"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/home_img_encrypt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/ic_encrypt_bad" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/required"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/encryption"
+                        android:textAppearance="@style/Regular"
+                        android:textColor="@color/color_text_dark"
+                        android:textSize="@dimen/header_text_size" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/home_btn_encryption_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="encryption">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginBottom="32dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_good" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_encrypt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="@string/your_device"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_encrypted"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|end"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#F8F8F8"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/security_recomandations"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_ip_scanning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_border_line" />
+
+        <LinearLayout
+            android:id="@+id/home_ip_scanning_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/home_img_connection"
+                android:layout_width="48dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_connection_good" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/connections"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/header_text_size" />
+
+            <Button
+                android:id="@+id/home_btn_scan_connections"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/scan"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/home_btn_connection_detail"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:tag="connection"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_connection_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_tv_no_dirty_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:text="@string/no_infected_ips"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/sub_header_text_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_recycleView_connections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_applications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_border_line" />
+
+        <LinearLayout
+            android:id="@+id/home_applications_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/home_img_application"
+                android:layout_width="48dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_application_good" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/applications"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/header_text_size" />
+
+            <Button
+                android:id="@+id/home_btn_scan_applications"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/scan"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/home_btn_application_detail"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:tag="application"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_application_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_tv_no_dirty_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:text="@string/no_infected_apps"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/sub_header_text_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_recycleView_applications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

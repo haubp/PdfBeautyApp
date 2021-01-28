@@ -1,17 +1,320 @@
 <resources>
-    <string name="app_name">PdfBeauty</string>
-    <string name="send">Send Message</string>
-    <string name="hello_world">hello world</string>
-    <string name="chooser">Send message ...</string>
-    <string name="start">Start</string>
-    <string name="stop">Stop</string>
-    <string name="reset">Reset</string>
-    <string name="starbuzz_logo">starbuzz logo</string>
-    <string-array name="options">
-        <item>Drinks</item>
-        <item>Food</item>
-        <item>Stores</item>
-    </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">OPSWAT</string>
+
+
+    <string name="menu_submit_feedback">Submit Feedback</string>
+    <string name="menu_try_other_product">Try Other OPSWAT Products</string>
+    <string name="menu_set_metadefender_server">Set Metadefender Server</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_faq">Faq</string>
+    <string name="menu_about">About</string>
+
+    <!--global -->
+    <string name="url_try_other_product">https://www.opswat.com/products</string>
+    <string name="url_faq">https://onlinehelp.opswat.com/metaaccess/iOS_and_Android_agent.html</string>
+    <string name="url_term">https://onlinehelp.opswat.com/policies/OPSWAT%2C_INC._TERMS_OF_SERVICE.html</string>
+    <string name="url_help_enroll">https://onlinehelp.opswat.com/metaaccess/How_do_I_enroll_a_mobile_device_to_a_MetaAccess_Account_.html</string>
+
+    <!-- deeplink -->
+    <string name="deeplink_url">gearsmobile.com</string>
+    <string name="deeplink_path_register">/register/</string>
+    <string name="universal_url">mobile.metaaccess.opswat.com</string>
+    <string name="universal_url_scheme">metaaccess</string>
+    <string name="universal_help_url">https://onlinehelp.opswat.com/metaaccess/iOS_and_Android_agent.html</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+
+    <string name="solution">Solution: </string>
+    <string name="jailbreak">Jailbreak / Root Status </string>
+    <string name="password">Password &amp; Lockscreen</string>
+    <string name="required">REQUIRED</string>
+    <string name="not_required">NOT REQUIRED</string>
+    <string name="os_up_to_date">OS Up to Date</string>
+    <string name="ad_tracking">Ad Tracking</string>
+    <string name="encryption">Encryption</string>
+    <string name="connections">Connections</string>
+    <string name="applications">Applications</string>
+    <string name="free_storage">Free Storage</string>
+    <string name="available_memory">Available Memory</string>
+    <string name="reboot_recency">Reboot Recency</string>
+    <string name="battery">Battery</string>
+    <string name="hardware">Hardware Performance</string>
+    <string name="scan">Scan</string>
+    <string name="rescan">Rescan</string>
+    <string name="no_threats_found">No Threats Found</string>
+    <string name="suspect">Suspect</string>
+    <string name="infected">Infected</string>
+    <string name="dirty">Dirty</string>
+    <string name="unknown">Unknown</string>
+    <string name="in_progress">In Progress</string>
+    <string name="scanning">Scanning</string>
+    <string name="latested_scanned">Latest Scanned:\u0020</string>
+
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="restrict">Restrict</string>
+    <string name="unrestrict">UnRestrict</string>
+    <string name="android">Android</string>
+    <string name="installed">Installed</string>
+    <string name="mb">MB</string>
+    <string name="mhz">Mhz</string>
+    <string name="reboot_time_menu">%h hrs : %m mins ago </string>
+    <string name="reboot_time_detail">%h hours %m minutes ago</string>
+    <string name="reboot_time_by_hours">%h hours ago</string>
+
+    <string name="percent">%</string>
+    <string name="cores">cores</string>
+    <string name="enroll">Enroll</string>
+    <string name="close">Close</string>
+    <string name="return_">Return</string>
+    <string name="help">Help</string>
+    <string name="retry">Retry</string>
+    <string name="submit">Submit</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Home -->
+    <string name="free_space">Free space</string>
+    <string name="total_space">Total space</string>
+    <string name="available_mem">Available memory</string>
+    <string name="system_reboot">Last system reboot</string>
+    <string name="battery_percent">Battery percentage</string>
+    <string name="battery_status">Battery Status</string>
+    <string name="battery_is_charging">Being charged</string>
+    <string name="battery_not_charging">Not being charged</string>
+    <string name="cpu_model">CPU model</string>
+    <string name="cpu_speed">CPU max speed</string>
+    <string name="cpu_core">Number of cores</string>
+    <string name="total_mem">Total memory</string>
+    <string name="password_protection">Password Protection</string>
+    <string name="lock_type">Lock Type</string>
+    <string name="security_recomandations">SECURITY RECOMANDATIONS</string>
+    <string name="android_version">Android version</string>
+    <string name="your_device">Your Device</string>
+    <string name="no_infected_ips">Not found any dirty IP connection</string>
+    <string name="no_infected_apps">Not found any infected application</string>
+    <string name="threat_found">$Num threats found</string>
+
+    <!-- Font name -->
+    <string name="font_regular">fonts/SimplonNorm-Regular.ttf</string>
+    <string name="font_medium">fonts/SimplonNorm-Medium.ttf</string>
+    <string name="font_light">fonts/SimplonNorm-Light.ttf</string>
+    <string name="font_bold">fonts/SimplonNorm-Bold.ttf</string>
+
+
+    <!-- Detail Page-->
+    <string name="open_settings">Open Settings</string>
+    <!--Jailbreakreak-->
+    <string name="detail_jailbreak_title_good">Your device doesn\'t appear to be rooted.</string>
+    <string name="detail_jailbreak_description">Rooting a device disables built-in security measures and makes it much more vulnerable to malware and information theft.</string>
+
+    <string name="detail_jailbreak_title_bad">Your device appears to be rooted.</string>
+    <string name="detail_jailbreak_title_sub_bad">Rooting a device disables built-in security measures and makes it much more vulnerable to malware and information theft.</string>
+    <string name="detail_jailbreak_solution_1">1. <b>Unroot</b> your device</string>
+
+    <!--Password-->
+    <string name="detail_password_title_good">Your device is secured with a lock screen plus </string>
+    <string name="detail_password_description">Without a password, the data on your device may be accessed by anyone in possession of your device. This can lead to information and identity theft.</string>
+
+    <string name="detail_password_title_bad">Your device is not secured with a lock screen and passcode.</string>
+    <string name="detail_password_title_sub_bad">Without a password, the data on your device may be accessed by anyone in possession of your device. This can lead to identity theft.</string>
+    <string name="detail_password_solution_1">1. Open the <b>Settings</b> app</string>
+    <string name="detail_password_solution_2">2. Go to <b>Lock screen</b> (it may be under "Security")</string>
+    <string name="detail_password_solution_3">3. Select a screen lock type</string>
+    <string name="detail_password_solution_4">4. Choose a pin, password, or pattern that only you know</string>
+
+    <!--Ad tracking-->
+    <string name="detail_ad_tracking_title_good">Your device has ad tracking set to limited.</string>
+    <string name="detail_ad_tracking_description">Ad tracking allows advertisers to build detailed profiles about you based on your Internet browsing history. Disabling this feature improves your privacy.</string>
+
+    <string name="detail_ad_tracking_title_bad">Your device is opted in to ad tracking.</string>
+    <string name="detail_ad_tracking_title_sub_bad">Ad tracking allows advertisers to build detailed profiles about you based on your Internet browsing history. Opting out of ad tracking will improve your privacy.</string>
+    <string name="detail_ad_tracking_solution">Search for instructions on how to opt out of ad tracking for your phone to opt out ad tracking and reset advertising ID (if any).</string>
+
+    <!--Encryption-->
+    <string name="detail_encryption_title_good">Your device storage is encrypted.</string>
+    <string name="detail_encryption_description">Encrypting your device will prevent data from being extracted in case the device is lost or stolen.</string>
+    <string name="detail_encryption_description_2">Not all encryption is equal &#8212;&#8212; longer passcodes dramatically increase resistance to brute force decryption attacks.</string>
+
+    <string name="detail_encryption_title_bad">Your device storage doesn\'t appear to be encrypted.</string>
+    <string name="detail_encryption_title_sub_bad">Encrypted devices prevent data from being extracted in case they are lost or stolen.</string>
+    <string name="detail_encryption_solution">Search for instructions on how to encrypt your device to prevent data breach.</string>
+
+    <!--Os update-->
+    <string name="detail_os_title_good">Your device\'s Operating System (OS) is up-to-date.</string>
+    <string name="detail_os_description">The latest OS may contain new features and is usually the most secure version.</string>
+
+    <!--Free storage-->
+    <string name="detail_free_storage_title_good">Your device has sufficient free storage.</string>
+    <string name="detail_free_storage_description">This will enable you to update your apps or operating system to the latest versions when needed.</string>
+
+    <string name="detail_free_storage_title_bad">Your device does not have sufficient free storage.</string>
+    <string name="detail_free_storage_title_sub_bad">This means that you may not be able to update your apps or operating system to the latest versions. It may also cause some apps to crash.</string>
+    <string name="detail_free_storage_solution_1">1. Remove large apps or media that occupy significant disk space</string>
+    <string name="detail_free_storage_solution_2">2. Install or replace your external memory card (if available for your device)</string>
+    <string name="used">Used: \u0020</string>
+    <string name="available">Available: \u0020</string>
+
+    <!--Available memory-->
+    <string name="detail_memory_title_good">Your device has sufficient free memory.</string>
+    <string name="detail_memory_description">Running with less than 50 MB of available memory may cause slowness or instability.</string>
+
+    <string name="detail_memory_title_bad">Your device has insufficient free memory.</string>
+    <string name="detail_memory_title_sub_bad">Running with less than 50 MB of available memory may cause slowness or instability.\nThe operating system should free up memory for you. Otherwise you can:</string>
+    <string name="detail_memory_solution_1">1. Upgrade to a newer device with more memory</string>
+    <string name="detail_memory_solution_2">2. Close extra browser tabs</string>
+    <string name="detail_memory_solution_3">3. Reboot the device</string>
+
+
+    <!--Reboot Recency-->
+    <string name="detail_reboot_title_good">Your device has been rebooted recently.</string>
+    <string name="detail_reboot_description">Devices should be rebooted weekly to avoid stability and performance issues.</string>
+
+    <string name="detail_reboot_title_bad">Your device hasn\'t been rebooted recently.</string>
+    <string name="detail_reboot_title_sub_bad">Devices should be rebooted weekly to avoid stability and performance issues.</string>
+    <string name="detail_reboot_solution_1">1. <b>Reboot</b> the device</string>
+
+    <!--Battery-->
+    <string name="detail_battery_title_good">Your device has sufficient battery charge.</string>
+    <string name="detail_battery_description">Maintaining a good battery charge will prevent the system from automatically slowing down or disabling services.</string>
+
+    <string name="detail_battery_title_bad">Your device has insufficient battery charge.</string>
+    <string name="detail_battery_title_sub_bad">Maintaining a good battery charge will prevent the system from automatically slowing down or disabling services.</string>
+    <string name="detail_battery_solution_1">1. <b>Charge the device</b> until the battery has at least 40% charge.</string>
+
+    <!--Hardware Performance-->
+    <string name="detail_hardware_title_good">Your device\'s hardware is performing well.</string>
+    <string name="detail_hardware_description">You\'re running one of the fastest phones available. You shouldn\'t need to upgrade for quite a while, so if your phone is acting slow it may be a symptom of a serious issue.</string>
+
+    <string name="detail_hardware_title_bad">Your device\'s hardware is not performing well.</string>
+    <string name="detail_hardware_title_sub_bad">You appear to be using an older or less powerful phone. This may not be of any concern for normal usage. However, if you feel that your phone is too slow you may consider upgrading to a newer or more powerful model. \nReasons you may want a more powerful phone:</string>
+    <string name="detail_hardware_solution_1">1. Playing 3D games may run better on newer devices</string>
+    <string name="detail_hardware_solution_2">2. Opening many apps or browser tabs at a time can be slow on older devices</string>
+    <string name="detail_hardware_solution_3">3. Very large documents may be faster to view and edit on a newer device</string>
+    <string name="detail_hardware_solution_4">4. HD video can play smoother on newer CPUs</string>
+
+    <!-- Submit Feedback -->
+    <string name="feedback">Feedback</string>
+    <string name="love_it">Love it</string>
+    <string name="missing_st">Something missing</string>
+    <string name="broken">Broken</string>
+    <string name="include_log">Include log files</string>
+    <string name="end_user_license_agreement">End User License Agreement</string>
+    <string name="copyright">© %d OPSWAT, Inc.</string>
+    <string name="title_love_it">Enjoying OPSWAT Mobile App?</string>
+    <string name="rate_now">RATE NOW</string>
+    <string name="no_later">NO, LATER</string>
+    <string name="open_google_play_5_start">Open the Google Play and share us your experience with 5 stars review</string>
+    <string name="submit_feedback_title">OPSWAT Mobile App Feedback</string>
+    <string name="submit_feedback_email">Your Email:</string>
+    <string name="submit_feedback_missing_desc">Please enter your suggestion here:</string>
+    <string name="submit_feedback_broken_desc">Please enter your problem here:</string>
+    <string name="sent_feedback_title">Your feedback has been sent.</string>
+    <string name="sent_feedback_desc">Thank you for using OPSWAT!</string>
+    <string name="error_user_email_invalid">Invalid email address</string>
+    <string name="submit_feedback_subject_missing">OPSWAT Mobile App Feedback [SOMETHING MISSING]</string>
+    <string name="submit_feedback_subject_broken">OPSWAT Mobile App Feedback [BROKEN]</string>
+    <string name="submit_feedback_email_to">metadefender_mobile_feedback@opswat.com</string>
+    <!--- About -->
+    <string name="about">About</string>
+    <string name="version">Version:</string>
+    <string name="device_id">Device ID:</string>
+    <string name="last_connected">Last Connected:</string>
+    <string name="managed_by">Managed by:</string>
+    <string name="server">Server:</string>
+    <string name="unregister">Unregister</string>
+
+    <!-- Setting -->
+    <string name="settings">Settings</string>
+    <string name="deny">Deny</string>
+    <string name="update_setting">Update</string>
+    <string name="setting_update_completed">Your settings were updated.</string>
+    <string name="setting_update_failed">Your setting can not updated, Please try again.</string>
+    <string name="setting_notification">Send notification when a new application is installed.</string>
+    <string name="setting_enable_debug_log">Enable troubleshooting log</string>
+    <string name="setting_remind_notification">Remind me to check the security status</string>
+    <string name="every">every</string>
+    <string name="days">days</string>
+    <string name="setting_error_input">Please enter a valid number between 1 and 30</string>
+
+    <!-- Enroll -->
+    <string name="enroll_your_device">Enroll Your Device</string>
+    <string name="enroll_description">Please enter a registration code on your OPSWAT account</string>
+    <string name="registration_code">Registration Code</string>
+    <string name="group_identity">Group Identity</string>
+    <string name="need_help">Need Help?</string>
+    <string name="optional_input">&#160;[optional]</string>
+    <string name="group_identity_placeholder">leave blank if you don\'t have</string>
+    <string name="server_address">Server Address</string>
+    <string name="server_address_placeholder">gears.opswat.com</string>
+    <string name="enroll_advanced">Show Advanced</string>
+    <string name="enroll_hide_advanced">Hide Advanced</string>
+    <string name="enroll_empty_reg_code">Registration code couldn\'t be empty.</string>
+    <string name="enroll_invalid_reg_code">Only a&#8211;z, A&#8211;Z, 0&#8211;9 accepted for registration code</string>
+    <string name="enroll_invalid_group_identity">Only a&#8211;z, A&#8211;Z, 0&#8211;9 accepted for group identity</string>
+    <string name="enroll_invalid_server_name">Invalid server address</string>
+
+    <string name="registering_your_device">Registering your device</string>
+    <string name="un_registering_your_device">UnRegistering your device</string>
+    <string name="error_un_register_title">Your device could not be unregistered.</string>
+    <string name="error_register_title">We can not enroll this device.</string>
+    <string name="error_no_connection">The Internet connection appears to be lost. Please check and try again later.</string>
+    <string name="error_register_not_found_reg_code">Sorry, we could not recognize your registration code. Please contact your admin for this issue.</string>
+    <string name="error_register_generate">Sorry, we couldn\'t enroll your device right now. Please try again later.</string>
+    <string name="error_register_out_of_token">"Sorry, Your account usage seems to reach the limit. Please contact your admin to upgrade your account.</string>
+    <string name="register_successfully">Your device was successfully registered</string>
+    <string name="un_register_successfully">Your device was successfully unregistered</string>
+
+    <string name="error_register_out_of_token_message">Your device, associated with ${email}, does not have a license token issued. Please contact your IT administrator for assistance</string>
+    <string name="error_your_account_deleted_title">Your device was manually unregistered by your account administrator</string>
+    <string name="error_your_account_deleted_message">You can enroll your device to an OPSWAT account by clicking <b>Enroll Your Device</b></string>
+
+    <!-- Account info -->
+    <string name="your_device_compliant">Your device complies with your organization\’s security policy.</string>
+    <string name="your_device_non_compliant">Your device does not comply with your organization\’s security policy. Please contact your administrator for assistance</string>
+    <string name="your_device_out_of_token">Your device associated with ${name} does not have a license token issued. Please contact your IT administrator for assistance.</string>
+    <string name="your_device_managed_by">Managed by $N</string>
+
+    <!-- Request permission -->
+    <string name="request_permission_storage">Allow OPSWAT to access photos, media, and files on your device?</string>
+
+    <!-- User Identity -->
+    <string name="error_user_input_invalid">Your input is invalid. Please contact your administrator for assistance.</string>
+
+    <!-- Notification -->
+    <string name="notification_app_reminder">Have you checked your device security and privacy settings?</string>
+    <string name="notification_app_installed">"Scan $appName with OPSWAT?</string>
+    <string name="channel_id">OPSWAT_channel_id</string>
+    <string name="channel_name">OPSWAT_channel</string>
+    <string name="channel_description">Used for android 8.0</string>
+
+    <!-- Universal link -->
+    <string name="checking_security_status">Checking security status</string>
+    <string name="checking_security_status_description">OPSWAT is checking your device security status. This might take a few seconds.</string>
+    <string name="could_not_report_to_cloud">Could not report compliance data to MetaAccess servers. Please try again.</string>
+    <string name="report_to_cloud_complete">Compliance report was sent successfully to MetaAccess servers. You can now return to previous app.</string>
+    <string name="report_to_cloud_complete_with_app_name">Compliance report was sent successfully to MetaAccess servers. You can now return to  $App  app.</string>
+    <string name="invalid_transaction_id">Invalid transaction Id ($ErrorCode)</string>
+    <string name="your_device_is_not_enrolled">Your device was not enrolled</string>
+    <string name="can_not_open_other_app">Could not open the previous app.</string>
+
+    <!-- Eula -->
+    <string name="eula_title">OPSWAT Mobile App EULA</string>
+    <string name="eula_content_accept">Accept</string>
+
+    <!--UI -->
+    <string name="unregister_device">Unregister Device</string>
+    <string name="security">Security</string>
+    <string name="health">Health</string>
+    <string name="fully_encrypted">fully encrypted</string>
+    <string name="unencrypted">unencrypted</string>
+    <string name="partial_encrypted">partial encrypted</string>
+    
+    <!-- Warning -->
+    <string name="warning">Warning</string>
+    <string name="application_scanning_warning">Applications scanning can consume significant bandwidth. We strongly suggest you first connect to a Wi-Fi network.</string>
+    <string name="ip_scanning_warning">IP scanning can consume significant bandwidth. We strongly suggest you first connect to a Wi-Fi network.</string>
+
 </resources>

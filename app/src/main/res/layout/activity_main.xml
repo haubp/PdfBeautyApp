@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    class="com.example.pdfbeauty.WorkoutListFragment"
-    android:id="@+id/list_frag"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <opswat.com.view.custom.SlideMenuLayout.SlideMenuLayout
+        android:id="@+id/home_slide_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:allowDragging="true"
+        app:contentAlpha="0.5"
+        app:contentToggle="true"
+        app:parallax="true"
+        app:slideMode="right">
+
+        <include layout="@layout/content_menu_right" />
+
+        <LinearLayout
+            android:id="@+id/fm_slide_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                style="@style/TitleStyle.StatusBar"
+                android:background="@color/colorPrimary"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/home_right_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_action_menu" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/meta_access_title"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <include
+                android:id="@+id/home_content"
+                layout="@layout/fragment_home"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </opswat.com.view.custom.SlideMenuLayout.SlideMenuLayout>
+
+</RelativeLayout>

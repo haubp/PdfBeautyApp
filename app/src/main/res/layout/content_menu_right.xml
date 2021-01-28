@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkPrimary"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/menu_submit_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/menu_submit_feedback"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/grayPrimary"
+                android:textSize="@dimen/menu_text_size" />
+
+            <TextView
+                android:id="@+id/menu_try_other_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/menu_try_other_product"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/grayPrimary"
+                android:textSize="@dimen/menu_text_size" />
+
+            <TextView
+                android:id="@+id/menu_set_metadefender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/menu_set_metadefender_server"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/grayPrimary"
+                android:textSize="@dimen/menu_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/menu_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/menu_settings"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/grayPrimary"
+                android:textSize="@dimen/menu_text_size" />
+
+            <TextView
+                android:id="@+id/menu_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/menu_faq"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/grayPrimary"
+                android:textSize="@dimen/menu_text_size" />
+
+            <TextView
+                android:id="@+id/menu_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/menu_about"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/grayPrimary"
+                android:textSize="@dimen/menu_text_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/menu_unregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_dark"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/unregister_device"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Medium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sub_header_text_size" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/color_border_line_dark"/>-->
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/opswat_logo" />
+
+    </LinearLayout>
+
+</RelativeLayout>

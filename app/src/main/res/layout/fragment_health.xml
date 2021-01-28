@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_free_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_border_line" />
+
+        <LinearLayout
+            android:id="@+id/home_free_storage_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/home_img_storage"
+                android:layout_width="36dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_free_storage_bad" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/free_storage"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/header_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/home_btn_storage_detail"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="10dp"
+                android:tag="storage">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_free_storage_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_free_storage_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/free_storage"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_free_storage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical|end"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_total_storage_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/total_space"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_total_storage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical|end"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_available_mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_border_line" />
+
+        <LinearLayout
+            android:id="@+id/home_available_mem_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/home_img_memory"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_memory_bad" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/available_memory"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/header_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/home_btn_memory_detail"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="10dp"
+                android:tag="memory">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_memory_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/home_tv_memory_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:text="@string/available_memory"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/sub_header_text_size" />
+
+            <TextView
+                android:id="@+id/home_tv_memory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/sub_header_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_reboot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_border_line" />
+
+        <LinearLayout
+            android:id="@+id/home_reboot_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/home_img_reboot"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_reboot_good" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/reboot_recency"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/header_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/home_btn_reboot_detail"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="10dp"
+                android:tag="reboot">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_reboot_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/home_tv_reboot_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:text="@string/system_reboot"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/sub_header_text_size" />
+
+            <TextView
+                android:id="@+id/home_tv_reboot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:textAppearance="@style/Medium"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/sub_header_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_battery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_border_line" />
+
+        <LinearLayout
+            android:id="@+id/home_battery_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/home_img_battery"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_battery_bad" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:text="@string/battery"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/header_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/home_btn_battery_detail"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="10dp"
+                android:tag="battery">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_battery_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_battery_level_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/battery_percent"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_battery_level"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical|end"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_battery_charging_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/battery_status"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_battery_charging"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical|end"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_hardware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_border_line" />
+
+        <LinearLayout
+            android:id="@+id/home_hardware_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/home_img_hardware"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_hardware_good" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/hardware"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/header_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/home_btn_hardware_detail"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="10dp"
+                android:tag="hardware">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_hardware_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_cpu_model_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="@string/cpu_model"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_cpu_model"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical|end"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_cpu_speed_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/cpu_speed"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_cpu_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical|end"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_cores_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/cpu_core"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_cores"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical|end"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_tv_total_mem_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/total_mem"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+                <TextView
+                    android:id="@+id/home_tv_total_mem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical|end"
+                    android:textAppearance="@style/Medium"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/sub_header_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

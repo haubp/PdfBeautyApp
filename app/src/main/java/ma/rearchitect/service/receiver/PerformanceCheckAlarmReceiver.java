@@ -1,13 +1,12 @@
-package ma.rearchitect.service.receiver;
+package opswat.com.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-
-import ma.rearchitect.R;
+import opswat.com.R;
 import opswat.com.constant.MAContant;
-import ma.rearchitect.data.device.helper.HealthHelper;
+import opswat.com.device.helper.HealthHelper;
 import opswat.com.util.NotificationUtil;
 
 /**

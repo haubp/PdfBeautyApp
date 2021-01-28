@@ -1,10 +1,9 @@
-package ma.rearchitect.ui.about;
+package opswat.com.flow.about;
 
 import android.content.Context;
 
-import ma.rearchitect.MAApplication;
 import opswat.com.constant.MaCloudKey;
-import ma.rearchitect.data.data.AccountData;
+import opswat.com.data.AccountData;
 import opswat.com.handler.MACloudHandler;
 import opswat.com.network.helper.MACloudFactory;
 import opswat.com.network.helper.MACloudHelper;

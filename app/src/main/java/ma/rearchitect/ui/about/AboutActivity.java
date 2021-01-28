@@ -1,4 +1,4 @@
-package ma.rearchitect.ui.about;
+package opswat.com.flow.about;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,13 +7,13 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-import ma.rearchitect.R;
+import opswat.com.R;
 import opswat.com.constant.MAContant;
-import ma.rearchitect.data.data.AccountData;
+import opswat.com.data.AccountData;
 import opswat.com.enums.DialogTypes;
 import opswat.com.flow.base.BaseActivity;
 import opswat.com.flow.enroll.EnrollActivity;
-import ma.rearchitect.ui.mvp.MvpPresenter;
+import opswat.com.mvp.MvpPresenter;
 import opswat.com.util.AppUtils;
 import opswat.com.util.CommonUtil;
 import opswat.com.util.DateUtil;

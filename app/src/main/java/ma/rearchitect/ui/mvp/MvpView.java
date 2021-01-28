@@ -13,7 +13,7 @@
  * limitations under the License
  */
 
-package ma.rearchitect.ui.mvp;
+package opswat.com.mvp;
 
 import android.content.Context;
 

@@ -13,7 +13,7 @@
  * limitations under the License
  */
 
-package ma.rearchitect.ui.mvp;
+package opswat.com.mvp;
 
 /**
  * Created by LenVo on 22/08/18.

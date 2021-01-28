@@ -8,7 +8,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 
 import ma.rearchitect.R;
-import ma.rearchitect.data.data.MASettingData;
+import opswat.com.data.MASettingData;
 import opswat.com.enums.ConfigStatus;
 import opswat.com.util.NotificationUtil;
 

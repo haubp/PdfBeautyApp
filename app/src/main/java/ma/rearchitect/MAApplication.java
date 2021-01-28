@@ -114,9 +114,9 @@ public class MAApplication extends Application {
 
         AndroidNetworking.initialize(getApplicationContext(), okHttpClient);
 
-        if (!BuildConfig.DEBUG) {
-            Fabric.with(this, new Crashlytics());
-        }
+//        if (!BuildConfig.DEBUG) {
+//            Fabric.with(this, new Crashlytics());
+//        }
         handleInstallReferrerClient();
 //        Fabric.with(this, new Crashlytics());
 //        Crashlytics.logException(new Exception("LOG HERE"));

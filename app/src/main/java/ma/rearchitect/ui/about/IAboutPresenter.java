@@ -1,7 +1,6 @@
-package ma.rearchitect.ui.about;
+package opswat.com.flow.about;
 
-import ma.rearchitect.ui.mvp.MvpPresenter;
-
+import opswat.com.mvp.MvpPresenter;
 
 /**
  * Created by H. Len Vo on 9/4/18.

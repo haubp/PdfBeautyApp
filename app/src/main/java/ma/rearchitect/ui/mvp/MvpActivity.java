@@ -1,9 +1,10 @@
-package ma.rearchitect.ui.mvp;
+package opswat.com.mvp;
 
 import android.content.Context;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.annotation.Nullable;
+import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by LenVo on 22/08/18.

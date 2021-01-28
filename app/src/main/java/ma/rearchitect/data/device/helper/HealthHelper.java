@@ -28,7 +28,7 @@ import ma.rearchitect.data.device.model.Hardware;
 import ma.rearchitect.data.device.model.Memory;
 import ma.rearchitect.data.device.model.RebootRecency;
 import ma.rearchitect.data.device.model.Storage;
-import ma.rearchitect.utils.network.model.device.system.DiskSpace;
+import opswat.com.network.model.device.system.DiskSpace;
 
 /**
  * Created by LenVo on 7/14/18.

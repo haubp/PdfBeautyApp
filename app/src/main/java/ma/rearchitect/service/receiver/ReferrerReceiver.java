@@ -1,4 +1,4 @@
-package ma.rearchitect.service.receiver;
+package opswat.com.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
